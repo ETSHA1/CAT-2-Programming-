@@ -7,7 +7,7 @@ while stop == False:
     print("1: About/Team")
     print("2: Our Next Feature")
     print("3: Close Program")
-    menu_number = int(input("Enter 1 for About/Team Enter 2 for our next feature Enter 3 for closing our program."))
+    menu_number = int(input("please select a number."))
     if menu_number == 1:
         print("insert about us message")
     elif menu_number == 2:
