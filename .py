@@ -1,10 +1,18 @@
 #looping not done
-i is false
-while i is false:
-#elif path for the code
-menunumber = int(input(" enter 1 for about/team enter 2 for our next feature enenter 3 for closing our program"))
-if menunumber == 1:
-  print("
+def i():
+    i is false
+while i is False:
+    menu_number = int(input("Enter 1 for About/Team Enter 2 for our next feature Enter 3 for closing our program."))
+    if menu_number == 1:
+        print("insert about us message")
+    elif menu_number == 2:
+        print("Coming Soon!")
+    elif menu_number == 3:
+        i is True
+        print("Exiting code")
+    else:
+        print("Invalid input!")
+  
   
 
 'Create main.py with a variable called stop that is set to False.'
