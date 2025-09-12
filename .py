@@ -1,6 +1,5 @@
 #looping not done
 stop = False  #loop
-
 while not stop:
     # print menu 
     print("Menu: Please choose a number:\n1: About/Team\n2: Our Next Feature:\n3: Close Program")
@@ -12,7 +11,6 @@ while not stop:
     elif menu_number == 3:
         print("Exiting code")
         stop = True #ts is for exit 
-        
     else:
         print("Invalid input!")
   
