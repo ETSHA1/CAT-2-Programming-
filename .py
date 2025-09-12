@@ -1,7 +1,6 @@
-#looping not done
 stop = False  #loop
 while not stop:
-    # print menu 
+    # print menu
     print("Menu:\nWelcome to Gambit: Elijah & Charlie’s Showdown! Please choose a number:\n1: About/Team\n2: Our Next Feature:\n3: Close Program")
     menu_number = int(input("Please select a number. "))
     if menu_number == 1:
@@ -10,7 +9,7 @@ while not stop:
         print("Coming Soon!")
     elif menu_number == 3:
         print("Exiting code")
-        stop = True #ts is for exit 
+        stop = True 
     else:
         print("Invalid input!")
   
