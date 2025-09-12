@@ -1,4 +1,3 @@
-#looping not done
 stop = False  #loop
 while not stop:
     # print menu 
@@ -13,8 +12,3 @@ while not stop:
         stop = True #ts is for exit 
     else:
         print("Invalid input!")
-  
-  
-
-
-
