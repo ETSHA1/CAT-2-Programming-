@@ -1,54 +1,35 @@
-stop = False  
-while not stop:
-    print("Menu: Please choose a number:\n1: About/Team\n2: Our Next Feature:\n3: Close Program")
-    menu_number = int(input("Please select a number."))
-    if menu_number == 1:
-        print("insert about us message")
-    elif menu_number == 2:
-        print("Coming Soon!")
-    elif menu_number == 3:
-        print("Exiting code")
-        stop = True 
-    else:
-        print("Invalid input!")
+#This project maskes a card deck 
+#The goal is to implement functions like shuffleDeck(), dealOne(), and resetDeck() there have been no real challenges so far
+#i did the new functions and charlie did the new menu
 def shuffleDeck():
     print("shuffleDeck(): Coming soon!")
 def dealOne():
     print("dealOne(): Coming soon!")
-def dealNth():
-    print("dealNth(): Coming soon!")
-def showTopCard():
-    print("showTopCard(): Coming soon!")
 def resetDeck():
-    print("resetDeck(): Coming soon
-
-        print("\n--- Card Deck Menu ---")
-        print("1. Shuffle Deck")
-        print("2. Deal One Card")
-        print("3. Deal Nth Card")
-        print("4. Show Top Card")
-        print("5. Reset Deck")
-        print("6. Describe Project")
-        print("0. Exit")
-        choice = input("Select an option: ")
-        if choice == "1":
-            shuffleDeck()
-        elif choice == "2":
-            dealOne()
-        elif choice == "3":
-            dealNth()
-        elif choice == "4":
-            showTopCard()
-        elif choice == "5":
-            resetDeck()
-        elif choice == "6":
-            describeProject()
-        elif choice == "0":
-            print("Exiting...")
-            stop = True 
-        else:
-            print("Invalid choice. Try again.")
-
+    print("resetDeck(): Coming soon!")
+def menu():
+    stop = False
+    while not stop:
+        print("\nMenu: Please choose a number:")
+        print("1: About/Team")
+        print("2: Shuffle Deck")
+        print("3: Deal One Card")
+        print("4: Reset Deck")
+        print("5: Close Program")
+            menu_number = int(input("Please select a number: "))
+            if menu_number == 1:
+                describeProject()
+            elif menu_number == 2:
+                shuffleDeck()
+            elif menu_number == 3:
+                dealOne()
+            elif menu_number == 4:
+                resetDeck()
+            elif menu_number == 5:
+                print("Exiting code")
+                stop = True
+            else:
+                print("Invalid input!")
 
 Add function stubs for all planned features. 
 Implement one working function: describeProject() (8–12 lines describing goals, next steps, challenges, and learning). This should include  your about page from Task 1. 
