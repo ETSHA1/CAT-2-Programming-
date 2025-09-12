@@ -22,6 +22,33 @@ def showTopCard():
 def resetDeck():
     print("resetDeck(): Coming soon
 
+        print("\n--- Card Deck Menu ---")
+        print("1. Shuffle Deck")
+        print("2. Deal One Card")
+        print("3. Deal Nth Card")
+        print("4. Show Top Card")
+        print("5. Reset Deck")
+        print("6. Describe Project")
+        print("0. Exit")
+        choice = input("Select an option: ")
+        if choice == "1":
+            shuffleDeck()
+        elif choice == "2":
+            dealOne()
+        elif choice == "3":
+            dealNth()
+        elif choice == "4":
+            showTopCard()
+        elif choice == "5":
+            resetDeck()
+        elif choice == "6":
+            describeProject()
+        elif choice == "0":
+            print("Exiting...")
+            stop = True 
+        else:
+            print("Invalid choice. Try again.")
+
 
 Add function stubs for all planned features. 
 Implement one working function: describeProject() (8–12 lines describing goals, next steps, challenges, and learning). This should include  your about page from Task 1. 
