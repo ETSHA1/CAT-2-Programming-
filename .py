@@ -7,6 +7,8 @@ def dealOne():
     print("dealOne(): Coming soon!")
 def resetDeck():
     print("resetDeck(): Coming soon!")
+def describeProject():
+    print("describeProject(): Coming soon!")
 def menu():
     stop = False
     while not stop:
@@ -16,20 +18,20 @@ def menu():
         print("3: Deal One Card")
         print("4: Reset Deck")
         print("5: Close Program")
-            menu_number = int(input("Please select a number: "))
-            if menu_number == 1:
-                describeProject()
-            elif menu_number == 2:
-                shuffleDeck()
-            elif menu_number == 3:
-                dealOne()
-            elif menu_number == 4:
-                resetDeck()
-            elif menu_number == 5:
-                print("Exiting code")
-                stop = True
-            else:
-                print("Invalid input!")
+menu_number = int(input("Please select a number: "))
+if menu_number == 1:
+    describeProject()
+elif menu_number == 2:
+    shuffleDeck()
+elif menu_number == 3:
+    dealOne()
+elif menu_number == 4:
+    resetDeck()
+elif menu_number == 5:
+    print("Exiting code")
+    stop = True
+else:
+   print("Invalid input!")
 
 Add function stubs for all planned features. 
 Implement one working function: describeProject() (8–12 lines describing goals, next steps, challenges, and learning). This should include  your about page from Task 1. 
