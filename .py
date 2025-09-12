@@ -2,7 +2,7 @@
 stop = False  #loop
 while not stop:
     # print menu 
-    print("Menu:Welcome to Gambit: Elijah & Charlie’s Showdown! Please choose a number:\n1: About/Team\n2: Our Next Feature:\n3: Close Program")
+    print("Menu:\nWelcome to Gambit: Elijah & Charlie’s Showdown! Please choose a number:\n1: About/Team\n2: Our Next Feature:\n3: Close Program")
     menu_number = int(input("Please select a number. "))
     if menu_number == 1:
         print("We are a small company that specialises in mini-games based in Python!")
