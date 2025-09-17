@@ -18,10 +18,7 @@ def menu():
         print("3: Deal One Card")
         print("4: Reset Deck")
         print("5: Close Program")
-
-        try:
-            menu_number = int(input("Please select a number: "))
-            continue
+        menu_number = int(input("Please select a number: "))
 
         if menu_number == 1:
             describeProject()
