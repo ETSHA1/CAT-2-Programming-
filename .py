@@ -18,7 +18,11 @@ def menu():
         print("3: Deal One Card")
         print("4: Reset Deck")
         print("5: Close Program")
-        menu_number = int(input("Please select a number: "))
+
+        try:
+            menu_number = int(input("Please select a number: "))
+            continue
+
         if menu_number == 1:
             describeProject()
         elif menu_number == 2:
@@ -31,18 +35,22 @@ def menu():
             print("Exiting code")
             stop = True
         else:
-           print("Invalid input!")
+            print("Invalid input!")
+menu()
+            
+                    
+    
+#Add function stubs for all planned features. 
+#Implement one working function: describeProject() (8–12 lines describing goals, next steps, challenges, and learning). This should include  your about page from Task 1. 
+#How will you do it 
+#Create functions like shuffleDeck(), dealOne(), dealNth(), showTopCard(), resetDeck(), etc. 
+#Inside their def, have them all print “Coming soon!” 
+#Fully implement and link describeProject() in the menu. 
+#How will you test it 
+#Select each menu option. Functions should all print a response. You might wish to change the message to be unique for each function. 
+#describeProject() prints a full, formatted paragraph. 
+#Evidence to submit 
+#Screenshot of menu showing new options. 
+#Screenshot of code with functions and placeholder text. 
+#Screenshot of describeProject() output with the build log for this task. 
 
-Add function stubs for all planned features. 
-Implement one working function: describeProject() (8–12 lines describing goals, next steps, challenges, and learning). This should include  your about page from Task 1. 
-How will you do it 
-Create functions like shuffleDeck(), dealOne(), dealNth(), showTopCard(), resetDeck(), etc. 
-Inside their def, have them all print “Coming soon!” 
-Fully implement and link describeProject() in the menu. 
-How will you test it 
-Select each menu option. Functions should all print a response. You might wish to change the message to be unique for each function. 
-describeProject() prints a full, formatted paragraph. 
-Evidence to submit 
-Screenshot of menu showing new options. 
-Screenshot of code with functions and placeholder text. 
-Screenshot of describeProject() output with the build log for this task. 
