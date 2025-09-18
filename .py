@@ -1,6 +1,42 @@
 #This project maskes a card deck 
 #The goal is to implement functions like shuffleDeck(), dealOne(), and resetDeck() there have been no real challenges so far
 #i did the new functions and charlie did the new menu
+
+stop = False
+    while not stop:
+class Card: #makes deck
+    def __init__(self, suit, number):  #store list cards
+        self.suit = suit
+        self.number = number
+
+    def __repr__(self):
+        return f"{self.number} of {self.suit}"
+
+    @property
+    def suit(self):
+        return self._suit
+
+    @suit.setter
+    def suit(self, suit):
+        if suit in ["hearts", "clubs", "diamonds", "spades"]:
+            self._suit = suit
+        else:
+            raise ValueError("That's not a valid suit!")
+
+class Deck:
+    def __init__(self):
+        self._cards = []
+        self.populate()
+        print(self._cards)
+
+    def populate(self): #makes the cards exist 
+        suits = ["hearts", "clubs", "diamonds", "spades"]
+        numbers = [str(n) for n in range(2, 11)] + ["J", "Q", "K", "A"]
+
+        self._cards = [Card(suit, number) for suit in suits for number in numbers]#makes empty list for nos and suits
+
+
+
 def shuffleDeck():
     print("shuffleDeck(): Coming soon!")
 def dealOne():
@@ -10,8 +46,7 @@ def resetDeck():
 def describeProject():
     print("describeProject(): Coming soon!")
 def menu():
-    stop = False
-    while not stop:
+
         print("\nMenu: Please choose a number:")
         print("1: About/Team")
         print("2: Shuffle Deck")
