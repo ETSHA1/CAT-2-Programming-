@@ -3,11 +3,11 @@
 #i did the new functions and charlie did the new menu
 
 class Card:#make card 
-    def __init__(self, suit, number):#store a list of cards
-        self.suit = suit
-        self.number = number
+    def __init__(self, suit, number):#store an empty list of cards
+        self.suit = suit#the suit
+        self.number = number# the numbers
 
-    def __repr__(self):
+    def __repr__(self): #creates a string using placeholder values
         return f"{self.number} of {self.suit}"
 
     @property #the value of self._suit stored within the my_card
