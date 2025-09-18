@@ -2,40 +2,49 @@
 #The goal is to implement functions like shuffleDeck(), dealOne(), and resetDeck() there have been no real challenges so far
 #i did the new functions and charlie did the new menu
 
-stop = False
-    while not stop:
-class Card: #makes deck
-    def __init__(self, suit, number):  #store list cards
+class Card:#make card 
+    def __init__(self, suit, number):#store a list of cards
         self.suit = suit
         self.number = number
 
     def __repr__(self):
         return f"{self.number} of {self.suit}"
 
-    @property
+    @property #the value of self._suit stored within the my_card
     def suit(self):
         return self._suit
 
-    @suit.setter
+    @suit.setter # checks if data is a real suit
     def suit(self, suit):
         if suit in ["hearts", "clubs", "diamonds", "spades"]:
             self._suit = suit
         else:
             raise ValueError("That's not a valid suit!")
 
-class Deck:
+class Deck:# makes deck for us to use
     def __init__(self):
         self._cards = []
         self.populate()
-        print(self._cards)
 
-    def populate(self): #makes the cards exist 
+    def populate(self): #makes deck have cards
         suits = ["hearts", "clubs", "diamonds", "spades"]
         numbers = [str(n) for n in range(2, 11)] + ["J", "Q", "K", "A"]
+        self._cards = [Card(suit, number) for suit in suits for number in numbers]
 
-        self._cards = [Card(suit, number) for suit in suits for number in numbers]#makes empty list for nos and suits
+def test(): #tests if works
+    print("Creating a new deck...")
+    deck = Deck()
 
+    print("\nTotal cards in deck:", len(deck._cards))
+    print("\nFirst five cards in the deck:")
+    for card in deck._cards[:5]:
+        print(card)
 
+    print("\nLast five cards in the deck:")
+    for card in deck._cards[-5:]:
+        print(card)
+
+test()
 
 def shuffleDeck():
     print("shuffleDeck(): Coming soon!")
