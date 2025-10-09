@@ -1,6 +1,8 @@
 #This project maskes a card deck 
 #The goal is to implement functions like shuffleDeck(), dealOne(), and resetDeck() there have been no real challenges so far
 #i did the new functions and charlie did the new menu
+def aboutTeam():
+    print("aboutTeam(): Coming soon!")
 def shuffleDeck():
     print("shuffleDeck(): Coming soon!")
 def dealOne():
@@ -22,7 +24,7 @@ def menu():
         menu_number = int(input("Please select a number: "))
 
         if menu_number == 1:
-            describeProject()
+            aboutTeam()
         elif menu_number == 2:
             shuffleDeck()
         elif menu_number == 3:
@@ -30,6 +32,8 @@ def menu():
         elif menu_number == 4:
             resetDeck()
         elif menu_number == 5:
+            describeProject()
+        elif menu_number == 6:
             print("Exiting code")
             stop = True
         else:
