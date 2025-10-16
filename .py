@@ -10,7 +10,7 @@ def dealOne():
 def resetDeck():
     print("resetDeck(): Coming soon!")
 def describeProject():
-    print("describeProject(): Coming soon!")
+    print("describeProject(): This project is designed to be a fun card game that anyone can learn easily and relax with!")
 def menu():
     #these just define terms and saves us time and makes the code cleaner
     stop = False
