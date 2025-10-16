@@ -30,7 +30,11 @@ class Deck:# makes deck for us to use
         self._cards = [Card(suit, number) for suit in suits for number in numbers]
 
 def dealOne():
-    print("dealOne(): Coming soon!")
+    top_card = deck.pop()
+    print(f"Dealt card: {top_card}")
+    print(f"Remaining cards in deck: {len(deck)}")
+else:
+    print("The deck is empty, no cards to deal.")
 
 def resetDeck():
     print("resetDeck(): Coming soon!")
