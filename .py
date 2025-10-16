@@ -12,6 +12,7 @@ def resetDeck():
 def describeProject():
     print("describeProject(): Coming soon!")
 def menu():
+    #these just define terms and saves us time and makes the code cleaner
     stop = False
     while not stop:
         print("\nMenu: Please choose a number:")
