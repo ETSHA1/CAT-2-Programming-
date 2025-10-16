@@ -29,21 +29,47 @@ class Deck:# makes deck for us to use
         numbers = [str(n) for n in range(2, 11)] + ["J", "Q", "K", "A"]
         self._cards = [Card(suit, number) for suit in suits for number in numbers]
 
-    def shuffleDeck(self):#use random module to randomize card
+def dealOne():
+    print("dealOne(): Coming soon!")
+
+def resetDeck():
+    print("resetDeck(): Coming soon!")
+    
+def shuffleDeck(self):#use random module to randomize cards
         random.shuffle(self._cards)
-
-    def showTopCards(self, count=3):#shows top card on deck by selecting first 3 card in cards
-        return self._cards[:count] 
-
- 
-
-    def highestCard(self, cards):
-        order = {str(n): n for n in range(2, 11)}
-        order.update({"J": 11, "Q": 12, "K": 13, "A": 14})
-        return max(cards, key=lambda card: order[card.number])
 
 def describeProject():
     print("Project: our sigma aplha card")
     print(" makes a 52-card deck")
+    
+def aboutTeam():
+    print("we are charlie and elijah and we like are humans in like this insane class")
+    print("and like they like forced me to like make this i know crazy")
+          
+   stop = False
+    while not stop:
+        print("\nMenu: Please choose a number:")
+        print("1: About/Team")
+        print("2: Shuffle Deck")
+        print("3: Deal One Card")
+        print("4: Reset Deck")
+        print("5: Describe Project")
+        print("6: Close Program")
+        menu_number = int(input("Please select a number: "))
 
-
+        if menu_number == 1:
+            aboutTeam()
+        elif menu_number == 2:
+            shuffleDeck()
+        elif menu_number == 3:
+            dealOne()
+        elif menu_number == 4:
+            resetDeck()
+        elif menu_number == 5:
+            describeProject()
+        elif menu_number == 6:
+            print("Exiting code")
+            stop = True
+        else:
+            print("Invalid input!")
+menu()
