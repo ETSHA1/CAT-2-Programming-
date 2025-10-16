@@ -43,11 +43,7 @@ class Deck:# makes deck for us to use
         return max(cards, key=lambda card: order[card.number])
 
 def describeProject():
-    print("Project: Enhanced Deck Class")
-    print("Features:")
-    print("- Builds a 52-card deck")
-    print("- Shuffles and shows top 3 cards")
-    print("- Deals 5 cards and reports highest")
-    print("- Resets deck and confirms count = 52")
-    print("- Validates input when dealing")
+    print("Project: our sigma aplha card")
+    print(" makes a 52-card deck")
+
 
