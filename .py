@@ -25,8 +25,8 @@ class Deck:  # makes deck for us to use
         self.populate()
 
     def populate(self): #make the cards pretty easy to tell what it is by looking
-        suits = ["hearts", "clubs", "diamonds", "spades"]
-        numbers = [str(n) for n in range(2, 11)] + ["J", "Q", "K", "A"]
+        suits = ["hearts", "clubs", "diamonds", "spades"]#tuff suits
+        numbers = [str(n) for n in range(2, 11)] + ["J", "Q", "K", "A"]# there is numbers and face cards 
         self._cards = [Card(suit, number) for suit in suits for number in numbers]
 
     def shuffleDeck(self):#uses that random to shuffle 
@@ -49,7 +49,7 @@ deck = Deck()#i forgot to make deck for way too long so here it is
 
 def describeProject():#yo ahh dont need me to tell you what print does
     print("Project: our sigma alpha card")
-    print("Makes a 52-card deck, shuffles, deals, and resets so useful")
+    print("Makes a 52 card deck, shuffles, deals, and resets so unbeliveably useful.")
 
 def aboutTeam():#you know what print is
     print("We are Charlie and Elijah and we like are humans in like this insane class")
