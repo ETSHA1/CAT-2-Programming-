@@ -15,7 +15,7 @@ class Card:  # make card
     @suit.setter#makes sure the suits are the right one although i doubt we need it 
     def suit(self, suit):#ts is where it looks
         if suit in ["hearts", "clubs", "diamonds", "spades"]:#what the suits should be
-            self._suit = suit
+            self._suit = suit #the check
         else:
             raise ValueError("That's not a valid suit!")
 
