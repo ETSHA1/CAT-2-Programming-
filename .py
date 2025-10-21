@@ -47,8 +47,8 @@ class Deck:  # makes deck for us to use
 
 deck = Deck()#i forgot to make deck for way too long so here it is
 
-def describeProject():#yo ahh dont need me to tell you what print does
-    print("Project: our sigma alpha card")
+def describeProject():#you dont need me to tell you what print does
+    print("Project: our super useful card deck")
     print("Makes a 52 card deck, shuffles, deals, and resets so unbeliveably useful.")
 
 def aboutTeam():#you know what print is
