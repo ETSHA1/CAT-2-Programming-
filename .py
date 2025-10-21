@@ -32,9 +32,9 @@ class Deck:  # makes deck for us to use
     def shuffleDeck(self):#uses that random to shuffle 
         random.shuffle(self._cards)
 
-    def dealOne(self):#ts is 90% your code you should know what it is 
-        if self._cards:
-            top_card = self._cards.pop()
+    def dealOne(self):#ts is 90% your code charlie you should know what it is 
+        if self._cards:#use if to make sure there aare cards
+            top_card = self._cards.pop()#remove and return the last item from the self.cards list
             print(f"Dealt card: {top_card}")
             print(f"Remaining cards in deck: {len(self._cards)}")
         else:
@@ -55,7 +55,7 @@ def aboutTeam():#you know what print is
     print("We are Charlie and Elijah and we like are humans in like this insane class")
     print("And like they like forced me to like make this I know crazy!!!!!!!")
 
-def menu():#menu funtion 
+def menu():#menu funtion you did this
     stop = False
     while not stop:
         print("\nMenu: Please choose a number:")
@@ -68,7 +68,7 @@ def menu():#menu funtion
         try:
             menu_number = int(input("Please select a number: "))
         except ValueError:
-            print("That ain't a number. I request you put a number.")
+            print("That is not a number. I request you put a number.")
             continue
 
         if menu_number == 1:
