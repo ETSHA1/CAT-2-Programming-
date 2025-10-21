@@ -5,10 +5,10 @@ class Card:  # make card
         self.suit = suit
         self.number = number
 
-    def __repr__(self):
+    def __repr__(self): #creates a string using placeholder values
         return f"{self.number} of {self.suit}"
 
-    @property
+    @property #the value of self._suit stored within the my_card
     def suit(self):
         return self._suit
 
