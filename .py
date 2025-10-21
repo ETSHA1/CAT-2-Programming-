@@ -68,7 +68,7 @@ def menu():#menu funtion
         try:
             menu_number = int(input("Please select a number: "))
         except ValueError:
-            print("Bruh, that ain't a number.")
+            print("That ain't a number. I request you put a number.")
             continue
 
         if menu_number == 1:
